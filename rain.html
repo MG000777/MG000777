@@ -1,0 +1,128 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>仙草</title>
+	<link href="rain.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="banner">
+		<div id="icon">
+			<img src="img/cat.jpg">
+		</div>
+		<div id="searchdiv">
+			<input id="search" type="serach" placeholder="關鍵字" />
+		</div>
+		<div id="iconright">
+			<a href="#">
+				<img src="img/cat.jpg">
+			</a>
+		</div>
+	</div>
+
+	<nav>
+		<ul id="menu">
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+				<div class="navsub">
+					<a href="https://www.twitch.tv/ko0416">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+				<div class="navsub">
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+					<a href="#">橘貓</a>
+				</div>
+
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">貓貓超可愛</a>
+			</li>
+
+		</ul>
+		
+	</nav>
+
+	<div id="content">
+		<div id="outsidead">
+			<div id="ad">
+				<a href="#"><img class="imgswitch" src="img/01.jpg"></a>
+				<a href="#"><img class="imgswitch" src="img/02.jpg"></a>
+				<a href="#"><img class="imgswitch" src="img/03.jpg"></a>
+				<a href="#"><img class="imgswitch" src="img/04.jpg"></a>
+				<a href="#"><img class="imgswitch" src="img/05.jpg"></a>
+
+			</div>
+		</div>
+		<div id="news">
+		</div>
+	</div>
+
+	<div id="jpg1">
+	</div>
+
+	<div id="jpg2">
+	</div>
+
+	<div id="footer">
+	</div>
+
+
+	<script>
+		$(document).ready(function(){
+			$("#menu li div").hide();
+			$("#menu li").hover(
+
+				function(){
+					$(this).find("div").slideDown("fast");
+					$(this).find("a:first").addClass("active");
+				},function(){
+					$(this).find("div").fadeOut("fast");
+					$(this).find("a").removeClass("active");
+
+				}
+				)
+
+		});
+	</script>
+</body>
+
+</html>

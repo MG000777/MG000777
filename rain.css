@@ -1,0 +1,163 @@
+body{
+	body
+	margin:0 auto; 
+}
+
+
+#banner{
+	display: inline-flex;
+	width:100%;
+	height: 100px;
+}
+
+#icon{
+	margin:0 0 0 300px;
+	width: 100px;
+	height: 50px;
+	float: left;
+}
+
+#iconright{
+	width:50px;
+	height: 50px;
+	border: 5px solid black;
+    border-radius: 30%;
+    right: auto;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 1em;
+}
+
+#iconright img{
+	height: 50px;
+	width: 50px;
+	border-radius: 30%;
+
+}
+#icon img{
+	width: 100px;
+	height: 100px;
+}
+
+#searchdiv{
+	width:200px;
+	height:10px;
+	margin-top:40px;
+	right: auto;
+	float: left;
+	margin-left: 1000px;
+}
+
+#search{
+	padding:5px 15px; 
+	border:2px black solid;
+	cursor:pointer;
+	border-radius: 5px; 
+}
+
+.logo{
+	float: left;
+}
+
+#menu{
+	margin: 0;
+	width:100%;
+	height: 50px;
+	list-style: none;
+	background-color: #595959;
+	display: inline-flex;
+}
+
+#menu li{
+	line-height: 50px;
+	height: 50px;
+	margin:auto;
+	width:100px;
+	font-size: 20px;
+	text-align:center;
+	z-index: 2; /*讓重疊物件進行重疊排序*/
+}
+
+#menu a{
+	height: 50px;
+	width:100px;
+	color:white;
+	text-decoration: none;
+
+}
+
+
+.navsub div{
+	position: absolute;
+    margin:auto;
+	list-style: none;
+	height: 50px;
+	width:100px;
+	border-radius: 0;
+    font-size: 16px;
+    line-height: 32px;
+	display: inline-block;
+    text-decoration: none;
+ 
+}
+
+.navsub a{
+	color:red !important;
+	font-size: 18px !important;
+	display: inline-block !important;
+    text-decoration: none !important;
+
+}
+
+#content{
+	margin: 0;
+	width: 100%;
+	height: 500px;
+	background-color: #ccc;
+	display: flex; /*決定區塊排版方向*/
+	flex-direction: row;
+}
+#outsidead{
+	height: 500px;
+	width: 70%;
+	background-color: #111111;
+}
+#ad{
+	margin:0 0 0 300px;
+	height: 500px;
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden; /*超過了就隱藏*/
+}
+.imgswitch{
+	width:900px;
+	height: 500px;
+	position: relative;
+}
+
+#news{
+	height: 500px;
+	width: 30%;
+	background-color: green;
+
+}
+
+
+#footer{
+	width:100%;
+	height:100px;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;/*footer裡面的文字置中*/
+	clear:both;/*清除float效果*/
+
+}
+
+.active{
+	background-color: #003E3E;
+}
+
+
